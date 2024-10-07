@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Educativa Santa Lucía</title>
+    <link rel="icon" href="./imagenes/escudo-removebg-preview.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header-container {
+            background-color: #FF0000   ;
+            padding: 10px;
+            width: 100%; 
+            margin: 0; 
+            border-bottom: 4px solid white;
+        }
+
+        header {
+            background-color: #FF0000;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo-texto {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+            margin-right: 15px;
+        }
+
+        .texto-institucion h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: white;
+            border-radius: 25px;
+            padding: 10px 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            color: #FF0000;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #FF0000;
+            font-weight: bold;
+        }
+
+        .bienvenidos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .bienvenidos h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .slider {
+            
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16 / 9; 
+            margin: 0 auto 40px auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            width: 100%; 
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto; 
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 30px;
+        }
+
+        .next {
+            right: 30px;
+        }
+
+        .noticias {
+            padding: 20px;
+            background-color: #FF0000;
+            color: white;
+            text-align: center;
+        }
+
+        .noticias h2 {
+            margin-bottom: 20px;
+        }
+
+        .noticia {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .imagennoticia {
+            width: 100%; 
+            height: auto;
+            border: solid;
+        }
+
+        .plataforma {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .plataforma a {
+            display: inline-block;
+            text-decoration: none;
+            color: #FF0000;
+        }
+
+        .plataforma img {
+            width: 300px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .plataforma img:hover {
+            transform: scale(1.1);
+        }
+
+        .plataforma p {
+            margin-top: 10px;
+            font-size: 24px;
+            color: #FF0000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #FF0000;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo-texto">
+                <div class="logo">
+                    <img src="./imagenes/escudo-removebg-preview.png" alt="Logo Institución Educativa Santa Lucía">
+                </div>
+                <div class="texto-institucion">
+                    <h1>INSTITUCIÓN EDUCATIVA SANTA LUCÍA</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="./page2.html">Objetivos</a></li>
+                
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section class="bienvenidos">
+        <h1>BIENVENIDOS</h1>
+        <p style="color: white;">.</p>
+        <p style="color: white;">.</p>
+        <p style="color: white;">.</p>
+        <p style="color: white;">.</p>
+       
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./imagenes/1.png" alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/440932956_959378529212311_4084566456786609267_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGhIvvdWWDKRraN1yHLeWJTW4F-ZmtNAx5bgX5ma00DHi9vx1hub5QrtRffO7WKnXIOlLZSDqn94rIc7Vjbtd1R&_nc_ohc=jUg2T3L-6KMQ7kNvgGKnfqN&_nc_ht=scontent-ams2-1.xx&_nc_gid=ANBEv9Yn56a-q-qhIl05N3b&oh=00_AYA1pX5PzEwjiU_hpLVu0Wpr2AwoLv0iWAVMltBcMo4T4g&oe=67020963" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/438782183_948835700266594_1013446301136976784_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHTfqMTi-vbI5YcTbO6FEHVM25ZWeihpSYzbllZ6KGlJhmaF9AVA5w1f7OoJME5P5gUx7sxfeqivq2NcWgf8uTF&_nc_ohc=wKLjQR1-fnQQ7kNvgGqntmI&_nc_ht=scontent-ams4-1.xx&_nc_gid=AqKIK5QRh_JnF0uJ9bDsG1d&oh=00_AYCI9EfJUdKPUDePg6jk8eO_o6Z6j3zWjFBv0vDLlpX8JQ&oe=67020CBF" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <section class="noticias">
+        <h2>NOTICIAS</h2>
+        <div class="noticia">
+            <img src="./imagenes/2.jpg" alt="Imagen noticia 1" class="imagennoticia">
+            <p>Hoy conmemoramos la valentía de nuestro héroes en la Batalla de Boyacá,  un hecho histórico para nuestro país, es así que el Gimnasio Los Cerros e Instituto  Santa Lucia Simijaca cada 7 de agosto renouevan su compromiso con la libertad y unidad nacional.
+                Agradecemos a cada una de las personas que nos acompañaron el día de hoy.</p>
+        </div>
+        <div class="noticia">
+            <img src="./imagenes/3.jpg" alt="Imagen noticia 2" class="imagennoticia">
+            <p>La Banda Músico marcial Infantil Los Cerros de Santa Lucia,  integrada por los estudiantes del Gimnasio Los Cerros  e Instituto Santa Lucia Simijaca  participó del VIII festival de bandas organizado en el municipio de Sutatausa, obteniendo tres menciones de honor 🎖️🎷🎉🎷🎉
+                Gracias a todos nuestros estudiantes y sus familias por acompañarnos en esta gran experiencia, que permite fortalecer  diversas habilidades. </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2024 Institución Educativa Santa Lucía - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
+</body>
+</html>
